@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bd52676-315a-4cb4-91f8-e53d2eee8b30" name="Default Changelist" comment="" />
+    <list default="true" id="4bd52676-315a-4cb4-91f8-e53d2eee8b30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1crI7IIupD4clvEENmSabRC7EYP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,7 +37,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="ts.external.directory.path" value="C:\Users\fabio\Documents\Fabio\Programmazione\button_app_functions_ts\node_modules\typescript\lib" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\fabio\Documents\Fabio\Programmazione\functions\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591280116294</updated>
       <workItem from="1591280120574" duration="4406000" />
+      <workItem from="1591344503852" duration="7708000" />
     </task>
     <servers />
   </component>
@@ -47,10 +59,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1591288005616">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591288005616" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1591288005616">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591288005616" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1591288005616">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591288005616" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1591288005616">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591288005616" />
+    <state x="456" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1591344628444">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="456" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591344628444" />
     <state x="453" y="9" width="630" height="807" key="find.popup" timestamp="1591285466672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="453" y="9" width="630" height="807" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1591285466672" />
+    <state x="426" y="188" key="run.anything.popup" timestamp="1591289815198">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="426" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591289815198" />
     <state x="426" y="67" width="672" height="676" key="search.everywhere.popup" timestamp="1591285823740">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
