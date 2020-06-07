@@ -1,5 +1,6 @@
 import * as functions from 'firebase-functions'
 import * as admin from 'firebase-admin'
+import * as field from "./firestore-field-filter";
 
 const {CloudTasksClient} = require('@google-cloud/tasks');
 
@@ -19,52 +20,53 @@ interface RegistrationTokenPayload {
 admin.initializeApp();
 
 export const onUpdateUserData =
-    functions.region("europe-west1").firestore.document('/users/{id}').onUpdate(async snapshot => {
-        const data = snapshot.after.data()! as DocumentData;
-        const {sendIn, registrationToken} = data;
-        if (sendIn == undefined) {
-            console.log("sendIn is undefined: " + sendIn);
-            return;// throw error
-        }
-
-        if (registrationToken == undefined) {
-            console.log("Registration token is undefined: " + registrationToken);
-            return;// throw error
-        }
-
-        let sendAtSecond: number | undefined;
-        if (sendIn && sendIn > 0) {
-            sendAtSecond = Date.now() / 1000 + sendIn
-        }
-        if (!sendAtSecond) {
-            // No expiration set on this document
-            return
-        }
-        // Get the project ID from the FIREBASE_CONFIG env var
-        const project = JSON.parse(process.env.FIREBASE_CONFIG!).projectId;
-        const location = 'europe-west1';
-        const queue = 'firestore-ttl';
-        const tasksClient = new CloudTasksClient();
-        const queuePath: string =
-            tasksClient.queuePath(project, location, queue);
-        const url = `https://${location}-${project}.cloudfunctions.net/sendNotification`;
-        const payload: RegistrationTokenPayload = {registrationToken};
-
-        const task = {
-            httpRequest: {
-                httpMethod: 'POST',
-                url,
-                body: Buffer.from(JSON.stringify(payload)).toString('base64'),
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            },
-            scheduleTime: {
-                seconds: sendAtSecond
+    functions.region("europe-west1").firestore.document('/users/{id}')
+        .onUpdate(field.default('numberOfHit', 'CHANGED', async (change: any, context: any) => {
+            const data = change.after.data()! as DocumentData;
+            const {sendIn, registrationToken} = data;
+            if (sendIn == undefined) {
+                console.log("sendIn is undefined: " + sendIn);
+                return;// throw error
             }
-        };
-        await tasksClient.createTask({parent: queuePath, task});
-    });
+
+            if (registrationToken == undefined) {
+                console.log("Registration token is undefined: " + registrationToken);
+                return;// throw error
+            }
+
+            let sendAtSecond: number | undefined;
+            if (sendIn && sendIn > 0) {
+                sendAtSecond = Date.now() / 1000 + sendIn
+            }
+            if (!sendAtSecond) {
+                // No expiration set on this document
+                return
+            }
+            // Get the project ID from the FIREBASE_CONFIG env var
+            const project = JSON.parse(process.env.FIREBASE_CONFIG!).projectId;
+            const location = 'europe-west1';
+            const queue = 'firestore-ttl';
+            const tasksClient = new CloudTasksClient();
+            const queuePath: string =
+                tasksClient.queuePath(project, location, queue);
+            const url = `https://${location}-${project}.cloudfunctions.net/sendNotification`;
+            const payload: RegistrationTokenPayload = {registrationToken};
+
+            const task = {
+                httpRequest: {
+                    httpMethod: 'POST',
+                    url,
+                    body: Buffer.from(JSON.stringify(payload)).toString('base64'),
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                },
+                scheduleTime: {
+                    seconds: sendAtSecond
+                }
+            };
+            await tasksClient.createTask({parent: queuePath, task});
+        }));
 
 
 export const sendNotification =
