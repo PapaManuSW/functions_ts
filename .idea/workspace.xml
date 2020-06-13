@@ -50,6 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -58,6 +59,90 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\fabio\Documents\Fabio\Programmazione\functions\node_modules\typescript\lib" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://europe-west1-api-5485359515497309438-439551.cloudfunctions.net/scheduleTaskToSendNotification" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/x-www-form-urlencoded" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="userId=o9xwEYHTfJNQgmFO7xGiMN1V98a2" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://europe-west1-api-5485359515497309438-439551.cloudfunctions.net/scheduleTaskToSendNotification" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="userId" />
+                <option name="value" value="o9xwEYHTfJNQgmFO7xGiMN1V98a2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://europe-west1-api-5485359515497309438-439551.cloudfunctions.net/scheduleTaskToSendNotification" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;userId&quot;: &quot;o9xwEYHTfJNQgmFO7xGiMN1V98a2&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.rest-api_2#2">
+    <configuration name="rest-api_2#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_2#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_2#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.rest-api_2#2" />
+        <item itemvalue="HTTP Request.rest-api_2#3" />
+        <item itemvalue="HTTP Request.rest-api_2#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -71,7 +156,7 @@
       <updated>1591280116294</updated>
       <workItem from="1591280120574" duration="4406000" />
       <workItem from="1591344503852" duration="13713000" />
-      <workItem from="1591964546714" duration="15464000" />
+      <workItem from="1591964546714" duration="19863000" />
     </task>
     <servers />
   </component>
@@ -91,22 +176,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1591288005616">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom" timestamp="1592063170210">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591288005616" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1591288005616">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="235" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592057405269" />
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom/1920.-540.1536.848/0.0.1920.1160@0.0.1920.1160" timestamp="1592063170210" />
+    <state width="1877" height="235" key="GridCell.Tab.0.center" timestamp="1592063170209">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591288005616" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1591288005616">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="235" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592057405269" />
+    <state width="1877" height="235" key="GridCell.Tab.0.center/1920.-540.1536.848/0.0.1920.1160@0.0.1920.1160" timestamp="1592063170209" />
+    <state width="1877" height="235" key="GridCell.Tab.0.left" timestamp="1592063170209">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591288005616" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1591288005616">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="235" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592057405269" />
+    <state width="1877" height="235" key="GridCell.Tab.0.left/1920.-540.1536.848/0.0.1920.1160@0.0.1920.1160" timestamp="1592063170209" />
+    <state width="1877" height="235" key="GridCell.Tab.0.right" timestamp="1592063170210">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591288005616" />
+    <state width="1493" height="235" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592057405269" />
+    <state width="1877" height="235" key="GridCell.Tab.0.right/1920.-540.1536.848/0.0.1920.1160@0.0.1920.1160" timestamp="1592063170210" />
     <state x="456" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1591344628444">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -119,10 +208,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="426" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591289815198" />
-    <state x="533" y="94" width="840" height="952" key="search.everywhere.popup" timestamp="1591538355737">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="426" y="67" width="672" height="676" key="search.everywhere.popup" timestamp="1592056890827">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="426" y="67" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591285823740" />
+    <state x="426" y="67" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592056890827" />
     <state x="533" y="94" width="840" height="952" key="search.everywhere.popup/1920.-540.1536.848/0.0.1920.1160@0.0.1920.1160" timestamp="1591538355737" />
   </component>
 </project>
